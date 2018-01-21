@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("coffeedate.png");
+    background-repeat: no-repeat;
+    background-size: 1870px 1500px;
+}

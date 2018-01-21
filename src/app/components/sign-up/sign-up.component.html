@@ -1,0 +1,45 @@
+<p>
+
+</p>
+<div class="card">
+  <form class="login-comp">
+    <!-- <div class="imgcontainer">
+      <img src="https://i.imgur.com/A0ZYKAb.png" alt="Avatar" class="avatar">
+    </div> -->
+
+    <div class="container">
+      <h1>Sign Up </h1>
+      <label><b style="color: black;">Username</b></label> 
+      <input [(ngModel)]='username' #ctrl="ngModel" type="text" placeholder="Enter Username" name="username" required>
+  
+      <label><b style="color:black ;">Password</b></label>
+      <input [(ngModel)]='password' #ctrl="ngModel" type="text" placeholder="Enter Password" name="pass" required>
+  
+      <label><b style="color: black;">Confirm Password</b></label>
+      <input [(ngModel)]='ConfirmPassword' #ctrl="ngModel" type="text" placeholder="Re-type Password" name="confirm" required>
+      
+      <!--
+      <label><b style="color: black;">Email Address</b></label>
+      <input [(ngModel)]='emailaddress' #ctrl="ngModel" type="text" placeholder="Enter Email Address" name="email" required>
+
+      <label><b style="color: black;">Birthdate</b></label>
+      <input [(ngModel)]='birthdate' #ctrl="ngModel" type="text" placeholder="Month/Day/Year" name="birth" required>
+
+      <label><b style="color: black;">Zip Code</b></label>
+      <input [(ngModel)]='zipcode' #ctrl="ngModel" type="text" placeholder="Enter Zip Code" name="zip" required>
+      -->
+      
+      <button type="submit" (click)='signup()'>Submit</button>
+      
+    <!-- <label> 
+      <!-- <label> 
+        <input type="checkbox" checked="checked"> <span style="color:white">Remember me</span>
+      </label> -->
+    </div>
+  
+    <!-- <div class="container"> -->
+      <!-- <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span> -->
+    <!-- </div> -->
+  </form>
+  </div>

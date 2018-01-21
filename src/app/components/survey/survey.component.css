@@ -1,0 +1,32 @@
+.container{
+    height: 100vh;
+}
+.carousel-inner{
+    height: 100vh;
+}
+.coffee-icon{
+    height: 40vh;
+    width: 20vw;
+}
+.carousel-caption{
+    padding-bottom: 20vh !important;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      /* width: 70%; */
+      margin: auto;
+  }
+
+.my-button {
+    background-color: rgb(74, 111, 160); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.my-button:active {
+    background-color: rgb(51, 80, 117); 
+}

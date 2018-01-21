@@ -1,0 +1,48 @@
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval='false'>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" *ngFor='let i of arr' data-slide-to="i+1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="https://i.imgur.com/A0ZYKAb.png" alt="Chania" width="480" height="365">
+        <div class="carousel-caption">
+          <h1>Hello {{name}}!</h1>
+          <h3>Let us know a bit more about yourself.</h3>
+          <button class="my-button" href="#myCarousel" role="button" data-slide="next">Okay!</button>
+        </div>
+      </div>
+
+      <div class="item" *ngFor='let i of arr'>
+        <img src="https://i.imgur.com/A0ZYKAb.png" alt="Chania" width="480" height="365">
+        <div class="carousel-caption" *ngIf='i < 18'>
+          <h1>Question {{i+1}}</h1>
+          <h3>{{questionList[i]}}</h3>
+          <button class="my-button" href="#myCarousel" role="button" data-slide="next" (click)="logAnswer(i, 0)">{{questionAnswers[i][0]}}</button>
+          <button class="my-button" href="#myCarousel" role="button" data-slide="next" (click)="logAnswer(i, 1)">{{questionAnswers[i][1]}}</button>
+        </div>
+        <div class="carousel-caption" *ngIf='i == 18'>
+          <h1>Thanks for completing our onboarding!</h1>
+          <h3>Click the button below to get started!</h3>
+          <button class="my-button" (click)="finish()">Get Started!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+</div>
