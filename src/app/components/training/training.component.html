@@ -1,7 +1,0 @@
-    <h1>{{currentProfileID}}</h1>
-    <li style="color:green; float: center" *ngFor="let answer of currentProfile; let i = index">
-      {{ answer }}
-    </li>
-    <button mat-raised-button class="primary-button" (click)="pushLabel(currentProfileID, 0)" *ngIf="isMore">No</button>
-    <button mat-raised-button class="primary-button" (click)="pushLabel(currentProfileID, 1)" *ngIf="isMore">Yes</button>
-<div>{{labels}}</div>
