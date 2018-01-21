@@ -9,7 +9,6 @@ import { ApiService } from '../../services/api.service'
 })
 export class FindingComponent implements OnInit {
 
-  name = '';
   username = '';
   password = '';
   matches = [];
